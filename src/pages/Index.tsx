@@ -1,12 +1,36 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import Header from "@/components/Header";
+import Hero from "@/components/Hero";
+import MiniCalendar from "@/components/MiniCalendar";
+import Categories from "@/components/Categories";
+import EventWidgets from "@/components/EventWidgets";
+import Services from "@/components/Services";
+import Footer from "@/components/Footer";
 
 const Index = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4 color-black text-black">Добро пожаловать!</h1>
-        <p className="text-xl text-gray-600">тут будет отображаться ваш проект</p>
+    <div className="min-h-screen bg-white font-golos">
+      <Header />
+
+      {/* Hero + Calendar row */}
+      <div className="relative">
+        <Hero />
+        {/* Floating calendar — right side, desktop only */}
+        <div className="absolute right-8 top-1/2 -translate-y-1/2 hidden xl:block z-20">
+          <MiniCalendar />
+        </div>
       </div>
+
+      {/* Mobile calendar */}
+      <div className="xl:hidden bg-gray-50 border-b border-gray-100 py-6">
+        <div className="max-w-7xl mx-auto px-4 flex justify-center">
+          <MiniCalendar />
+        </div>
+      </div>
+
+      <Categories />
+      <EventWidgets />
+      <Services />
+      <Footer />
     </div>
   );
 };
