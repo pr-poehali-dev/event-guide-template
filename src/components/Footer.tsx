@@ -110,13 +110,12 @@ export default function Footer() {
         <div className="border-t border-gray-800 pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
           {/* Logo */}
           <div className="flex items-center gap-3">
-            <div className="w-9 h-9 rounded-full bg-gradient-to-br from-teal-500 to-teal-600 flex items-center justify-center">
-              <span className="text-white font-montserrat font-black text-sm">EG</span>
-            </div>
+            <img
+              src="https://cdn.poehali.dev/projects/1ccdfe20-28eb-44d6-b26c-9d117645d032/bucket/ad6ae27b-ec8f-48a1-94d5-2a783858217c.png"
+              alt="Events Guide"
+              className="h-12 w-auto object-contain brightness-0 invert opacity-90"
+            />
             <div>
-              <div className="font-montserrat font-black text-white">
-                Events<span className="text-rose-400">Guide</span>
-              </div>
               <div className="text-gray-500 text-xs font-golos">Путеводитель по мероприятиям</div>
             </div>
           </div>

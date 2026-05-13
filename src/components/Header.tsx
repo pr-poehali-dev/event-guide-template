@@ -33,13 +33,12 @@ export default function Header() {
       <div className="bg-gradient-to-r from-teal-600 to-teal-500 text-white">
         <div className="max-w-7xl mx-auto px-4 py-2 flex items-center justify-between gap-4">
           {/* Logo */}
-          <a href="/" className="flex items-center gap-2 shrink-0">
-            <div className="w-8 h-8 rounded-full bg-white/20 flex items-center justify-center">
-              <span className="text-white font-montserrat font-black text-sm">EG</span>
-            </div>
-            <span className="font-montserrat font-black text-lg tracking-tight hidden sm:block">
-              Events<span className="text-rose-300">Guide</span>
-            </span>
+          <a href="/" className="flex items-center shrink-0">
+            <img
+              src="https://cdn.poehali.dev/projects/1ccdfe20-28eb-44d6-b26c-9d117645d032/bucket/ad6ae27b-ec8f-48a1-94d5-2a783858217c.png"
+              alt="Events Guide"
+              className="h-10 w-auto object-contain brightness-0 invert"
+            />
           </a>
 
           {/* Nav links */}
